@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/empty"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/appwidget_id"
+        android:layout_width="match_parent"
+        android:numColumns="4"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/appwidget_text"
+        android:textStyle="bold|italic" />
+
+</FrameLayout>

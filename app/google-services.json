@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "247284206576",
+    "firebase_url": "https://chefu-2d424.firebaseio.com",
+    "project_id": "chefu-2d424",
+    "storage_bucket": "chefu-2d424.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247284206576:android:967c356411df3d54",
+        "android_client_info": {
+          "package_name": "com.example.disen.chefu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247284206576-4llcvpg78sk67bsihqo9h39iucudg7k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.disen.chefu",
+            "certificate_hash": "76e08282fd472220cadcd732154a1805165da3ab"
+          }
+        },
+        {
+          "client_id": "247284206576-gsc1n43skpoh3cjsmpln7q4g0f807m8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpUJFE_n3CCy3zMKs2FqzRKqgWv8Zx1us"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247284206576-gsc1n43skpoh3cjsmpln7q4g0f807m8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

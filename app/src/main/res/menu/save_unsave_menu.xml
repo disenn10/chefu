@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/delete"
+        android:title="restore previous screen"
+        android:visible="false"
+        android:icon="@drawable/ic_delete_white_24dp"
+        app:showAsAction="always"
+        ></item>
+    <item android:id="@+id/save"
+        android:icon="@drawable/ic_favorite_border_white_24dp"
+        app:showAsAction="always"
+        android:visible="false"
+        android:title="save"
+        ></item>
+</menu>

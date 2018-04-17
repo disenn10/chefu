@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:text="label" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:text="amount" />
+
+        <TextView
+            android:layout_width="0dp"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:text="%/serving" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nutritional_recyclv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>

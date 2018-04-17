@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ChefU</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="from">Chef-U.</string>
+    <string name="automated_email">Your recipe has been shared! \n Thanks.</string>
+    <string name="balanced">balanced</string>
+    <string name="protein">high protein</string>
+    <string name="fat">low fat</string>
+    <string name="carbs">low carbs</string>
+    <string name="view">visible</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="custom">Custom made</string>
+
+    <string name="pick_three">Make sure you have enabled exactly 2 health labels for the homescreen</string>
+    <string name="first_timer">Enable 2 labels to configure the homescreen</string>
+    <string name="back_pressed">Use the back button at the top</string>
+
+    <string name="balanced_key">balanced</string>
+    <string name="protein_key">high protein</string>
+    <string name="fat_key">low fat</string>
+    <string name="carbs_key">low carbs</string>
+
+    <string name="active">active</string>
+    <string name="unactive">disabled</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="signedIn">Signed in</string>
+    <string name="shared">Check this recipe out! </string>
+    <string name="again">Try again</string>
+    <string name="fav_activity">favorite</string>
+
+    <string name="kcal"> kcal/serving</string>
+    <string name="by">By </string>
+    <string name="saved">Saved to your favorites!</string>
+    <string name="gotofav">Go to favorites</string>
+
+
+
+    <string name="remove">Removed from your favorites!</string>
+    <string name="remove_conf">Want to remove it from your favorites</string>
+    <string name="sending">Sending message</string>
+    <string name="wait">Please wait...</string>
+    <string name="sent">Message Sent</string>
+
+
+    <string name="peanut">Peanut free</string>
+    <string name="sorry">Sorry nothing was returned. Try refreshing</string>
+    <string name="vegan">Vegan</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="fish">Fish free</string>
+    <string name="no_results">Sorry, nothing was found for your search. Try again!</string>
+    <string name="shellfish">Shellfish free</string>
+    <string name="gram">g</string>
+    <string name="milligram">mg</string>
+    <string name="no">no</string>
+    <string name="settings">Settings</string>
+    <string name="yes">yes</string>
+    <string name="restore">Restore</string>
+    <string name="restore_conf">Would you want to go back to the search?</string>
+    <string name="cus_recipe">customizedRecipe</string>
+    <string name="cus_prefs">customizedRecipe</string>
+    <string name="appwidget_text">Chef-u</string>
+    <string name="add_widget">Add widget</string>
+    <string name="internet">Connect your device to internet</string>
+    <string name="share">Share</string>
+    <string name="browser">Go to browser</string>
+    <string name="see_ingredients">Check out ingredients</string>
+    <string name="health_benefits">Health benefits</string>
+    <string name="allergies">Allergies</string>
+    <string name="facts">Nutritional facts</string>
+    <string name="daily">daily value</string>
+    <string name="none">None</string>
+
+    <string name="g">gram</string>
+    <string name="mg">milligram</string>
+    <string name="ug">microgram</string>
+    <string name="percent">percent</string>
+</resources>

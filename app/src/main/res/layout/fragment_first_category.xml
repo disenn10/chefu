@@ -1,0 +1,28 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.disen.chefu.food_categories.first_category"
+    android:id="@+id/first_category_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/refresh_first_catg"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/first_category_recV"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:id="@+id/first_category_progress"
+    android:visibility="invisible"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:indeterminateBehavior="repeat"
+    android:layout_height="wrap_content" />
+
+</FrameLayout>

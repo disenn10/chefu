@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/calories_label"
+        android:layout_gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="Calories"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <View android:background="@color/colorPrimary"
+        android:layout_width = "368dp"
+        android:id="@+id/horizontal"
+        android:layout_height="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_label"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/max_textview"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/min_textView"
+        android:text="Min"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/max_textview"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/min_textView"
+        android:text="Max"
+        android:layout_height="wrap_content" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/min_textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/max"
+        android:focusedByDefault="false"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/min"
+        android:layout_height="wrap_content"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/max_textview"
+        android:focusedByDefault="false"
+        app:layout_constraintLeft_toLeftOf="@+id/min"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/max"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

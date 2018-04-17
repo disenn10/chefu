@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.disen.chefu.food_categories.customMade_category">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/custom_progress"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:indeterminateBehavior="repeat"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_view_custom"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/health_label_layout"/>
+            <include layout="@layout/calories_label"/>
+            <include layout="@layout/nutrients_label"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_done_white_24dp"
+                android:layout_gravity="center"
+                android:id="@+id/custom_done"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/cust_recV"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

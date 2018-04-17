@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.disen.chefu.DetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.disen.chefu.DetailActivity">
+
+    <include layout="@layout/top_detail_view_layout"/>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/health_benefits"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/health_benefits" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+    <include layout="@layout/labels_recyclv"/>
+
+        <include layout="@layout/diet_label_recycl"/>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/allergies"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/allergies" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <include layout="@layout/allergies_layout"/>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/facts"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/facts" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:id="@+id/daily_quantity"
+                android:contentDescription="@string/daily"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_height="wrap_content" />
+
+        <com.example.disen.chefu.Ui.Circle
+            android:id="@+id/daily_circle"
+            android:transitionName="@string/active"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Daily value %" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <include layout="@layout/nutritional_recyclv"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            style="@style/fab_style"
+            android:contentDescription="@string/see_ingredients"
+            android:id="@+id/see_ingredient"
+            android:src="@drawable/ic_blur_circular_black_36dp"
+            android:transitionName="@string/active"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="see ingredients"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

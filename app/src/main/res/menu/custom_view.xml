@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/restore"
+        android:title="restore previous screen"
+        android:icon="@drawable/ic_mode_edit_white_24dp"
+        app:showAsAction="always"
+        ></item>
+    <item android:id="@+id/save_custom_view"
+        android:icon="@drawable/ic_bookmark_white_24dp"
+        app:showAsAction="always"
+        android:title="Bookmark this search"
+        ></item>
+</menu>

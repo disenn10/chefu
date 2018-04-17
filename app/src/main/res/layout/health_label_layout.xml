@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/health_label"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Health Label" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/peanut" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vegan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vegetarian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/shellfish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="None" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/peanut_free"
+                    android:hint="@string/peanut"
+                    android:textColorHint="@color/blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/treenut_free"
+                    android:hint="@string/vegan"
+                    android:textColorHint="@color/blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/soy_free"
+                    android:hint="@string/vegetarian"
+                    android:textColorHint="@color/blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/fish_free"
+                    android:hint="@string/fish"
+                    android:textColorHint="@color/blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/shellfish_free"
+                    android:hint="@string/shellfish"
+                    android:textColorHint="@color/blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/none"
+                    android:hint="none"
+                    android:textColorHint="@color/blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>

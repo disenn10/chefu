@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:icon="@drawable/ic_menu_slideshow"
+        android:key="yrah"
+        android:title="Homescreen label">
+
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/balanced_key"
+            android:id="@+id/balance"
+            android:summaryOff="@string/unactive"
+            android:summaryOn="@string/active"
+            android:title="@string/balanced" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:id="@+id/protein"
+            android:key="@string/protein_key"
+            android:summaryOff="@string/unactive"
+            android:summaryOn="@string/active"
+            android:title="@string/protein" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/carbs_key"
+            android:id="@+id/carbs"
+            android:summaryOff="@string/unactive"
+            android:summaryOn="@string/active"
+            android:title="@string/carbs" />
+
+        <SwitchPreferenceCompat
+            android:checked="false"
+            android:id="@+id/fat"
+            android:defaultValue="false"
+            android:key="@string/fat_key"
+            android:summaryOff="@string/unactive"
+            android:summaryOn="@string/active"
+            android:title="@string/fat" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
