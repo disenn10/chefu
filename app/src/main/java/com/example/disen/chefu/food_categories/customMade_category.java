@@ -80,6 +80,8 @@ public class customMade_category extends Fragment implements LoaderManager.Loade
     ArrayList<FoodClass_infos> data_copy;
     SharedPreferences.Editor editor;
     AdView mAdView;
+    GridLayoutManager LM;
+    int scrollTo;
 
 
     public customMade_category() {
@@ -116,6 +118,7 @@ public class customMade_category extends Fragment implements LoaderManager.Loade
         min = view.findViewById(R.id.min);
         max = view.findViewById(R.id.max);
         done = view.findViewById(R.id.custom_done);
+        LM = new GridLayoutManager(getContext(),3);
         // Sample AdMob app ID:
         MobileAds.initialize(getContext(), "ca-app-pub-3940256099942544~3347511713");
         mAdView = view.findViewById(R.id.adView);
@@ -335,11 +338,11 @@ public class customMade_category extends Fragment implements LoaderManager.Loade
         //
         recyclerView.setVisibility(View.VISIBLE);
         RecipeAdapter recipeAdapter = new RecipeAdapter(getContext(),data,this);
-        GridLayoutManager LM = new GridLayoutManager(getContext(),3);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(LM);
         progress_bar.setVisibility(View.GONE);
         recyclerView.setAdapter(recipeAdapter);
+        recyclerView.setVerticalScrollbarPosition(scrollTo);
     }
 
     //update preferences..
@@ -369,6 +372,8 @@ public class customMade_category extends Fragment implements LoaderManager.Loade
         if(recyclerView.getVisibility() == View.VISIBLE){
             outState.putSerializable("data",data_copy);
             outState.putString("request",custom_request);
+            scrollTo = LM.findFirstCompletelyVisibleItemPosition();
+            outState.putInt("scrollto",scrollTo);
         }
     }
     //Restore screen to the custom display

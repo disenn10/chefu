@@ -35,6 +35,8 @@ public class second_category extends Fragment implements LoaderManager.LoaderCal
     int id;
     public static String old_label;
     ArrayList<FoodClass_infos> data_copy;
+    GridLayoutManager LM;
+    int scrollTo;
     SwipeRefreshLayout refresh;
     public second_category() {
         // Required empty public constructor
@@ -56,6 +58,7 @@ public class second_category extends Fragment implements LoaderManager.LoaderCal
         progressBar = view.findViewById(R.id.second_progress);
         id = 0;
         refresh = view.findViewById(R.id.refresh_second_catg);
+        LM = new GridLayoutManager(getContext(),3);
         refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -125,16 +128,18 @@ public class second_category extends Fragment implements LoaderManager.LoaderCal
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putSerializable("data",data_copy);
+        scrollTo = LM.findFirstCompletelyVisibleItemPosition();
+        outState.putInt("scrollto",scrollTo);
     }
 
     private void updateUI(ArrayList<FoodClass_infos> data) {
         progressBar.setVisibility(View.GONE);
         refresh.setRefreshing(false);
         RecipeAdapter recipeAdapter = new RecipeAdapter(getContext(),data,this);
-        GridLayoutManager LM = new GridLayoutManager(getContext(),3);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(LM);
         recyclerView.setAdapter(recipeAdapter);
+        recyclerView.setVerticalScrollbarPosition(scrollTo);
     }
 
     @Override

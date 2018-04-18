@@ -9,7 +9,8 @@
         android:layout_height="wrap_content">
     <ImageView
         android:layout_width="wrap_content"
-        android:src="@drawable/ic_menu_camera"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/ic_sentiment_neutral_black_36dp"
         android:layout_height="wrap_content" />
     </LinearLayout>
     <GridView

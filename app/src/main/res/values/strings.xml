@@ -52,6 +52,17 @@
     <string name="peanut">Peanut free</string>
     <string name="sorry">Sorry nothing was returned. Try refreshing</string>
     <string name="vegan">Vegan</string>
+    <string name="empty"/>
+    <string name="lonely">It is lonely in here!</string>
+    <string name="calories">calories</string>
+    <string name="serving">serving size</string>
+    <string name="chef">Chef-U</string>
+    <string name="favorites">Favorites</string>
+    <string name="communicate">Communicate</string>
+
+    <string name="send">Send</string>
+    <string name="source">author</string>
+    <string name="saved_widget">saved widget</string>
     <string name="vegetarian">Vegetarian</string>
     <string name="fish">Fish free</string>
     <string name="no_results">Sorry, nothing was found for your search. Try again!</string>

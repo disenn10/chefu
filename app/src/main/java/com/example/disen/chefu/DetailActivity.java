@@ -177,8 +177,11 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
                 setTitle(title);
                 Picasso.with(getApplicationContext()).load(image).into(imageView);
                 calorie_view.setText(calorie + getString(R.string.kcal));
+                calorie_view.setContentDescription(calorie+""+getString(R.string.kcal));
                 serving_view.setText(String.valueOf(serving));
+                serving_view.setContentDescription(getString(R.string.serving)+""+String.valueOf(serving));
                 source_view.setText(getString(R.string.by) + source);
+                source_view.setContentDescription(getString(R.string.by)+""+source);
 
                 //health labels
                 updateUI(HealthLabels, benefit_icon, health_labels_recyclerView);

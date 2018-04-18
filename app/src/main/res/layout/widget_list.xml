@@ -5,6 +5,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
+        android:contentDescription="@string/saved_widget"
         android:id="@+id/image_widget"
         android:layout_height="wrap_content" />
 

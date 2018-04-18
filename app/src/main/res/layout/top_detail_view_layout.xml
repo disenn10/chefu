@@ -26,6 +26,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
+                android:contentDescription="@string/serving"
                 android:src="@drawable/ic_local_dining_black_36dp"
                 android:layout_height="wrap_content" />
 
@@ -44,6 +45,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
+                android:contentDescription="@string/calories"
                 android:src="@drawable/ic_room_service_black_36dp"
                 android:layout_height="wrap_content" />
 
@@ -62,6 +64,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
+                android:contentDescription="@string/source"
                 android:src="@drawable/ic_person_black_36dp"
                 android:layout_height="wrap_content" />
 

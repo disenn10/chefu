@@ -42,8 +42,9 @@ public class first_category extends Fragment implements LoaderManager.LoaderCall
     ProgressBar progressBar;
     public static String old_label;
     int id;
-    Snackbar snackbar;
+    int scrollTo = 0;
     SwipeRefreshLayout refreshSwipe;
+    GridLayoutManager LM;
     public first_category() {
         // Required empty public constructor
     }
@@ -64,6 +65,7 @@ public class first_category extends Fragment implements LoaderManager.LoaderCall
         progressBar = view.findViewById(R.id.first_category_progress);
         id = 0;
         refreshSwipe = view.findViewById(R.id.refresh_first_catg);
+        LM = new GridLayoutManager(getContext(),3);
         refreshSwipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -81,6 +83,7 @@ public class first_category extends Fragment implements LoaderManager.LoaderCall
         //else do not relaunch it..just save data and re-display them to minimize requests
         else{
             data_copy = (ArrayList<FoodClass_infos>) savedInstanceState.getSerializable("data");
+            scrollTo = savedInstanceState.getInt("scrollto");
             updateUI(data_copy);
         }
         return view;
@@ -122,16 +125,18 @@ public class first_category extends Fragment implements LoaderManager.LoaderCall
         super.onSaveInstanceState(outState);
         outState.putSerializable("data",data_copy);
         outState.putString("label",label);
+        scrollTo = LM.findFirstCompletelyVisibleItemPosition();
+        outState.putInt("scrollto",scrollTo);
     }
 
     private void updateUI(ArrayList<FoodClass_infos> data) {
         progressBar.setVisibility(View.GONE);
         refreshSwipe.setRefreshing(false);
         RecipeAdapter recipeAdapter = new RecipeAdapter(getContext(),data,this);
-        GridLayoutManager LM = new GridLayoutManager(getContext(),3);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(LM);
         recyclerView.setAdapter(recipeAdapter);
+        recyclerView.setVerticalScrollbarPosition(scrollTo);
     }
 
     @Override

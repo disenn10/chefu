@@ -60,8 +60,17 @@ public class Settings extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
-        View view = findViewById(R.id.fragment_setting);
-        final Snackbar snackbar = Snackbar.make(view,getString(R.string.back_pressed),Snackbar.LENGTH_SHORT);
-        snackbar.show();
+        int x  = SettingsFragment.getswitches();
+        if (x == 2) {
+            NavUtils.navigateUpFromSameTask(this);
+        }else{
+        final Snackbar snackbar = Snackbar.make(view,getString(R.string.pick_three),Snackbar.LENGTH_LONG);
+        snackbar.setAction(getString(R.string.dismiss), new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackbar.dismiss();
+            }
+        });
+        snackbar.show();}
     }
 }
